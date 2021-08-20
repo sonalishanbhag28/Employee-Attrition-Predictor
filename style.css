@@ -1,0 +1,132 @@
+html, body 
+{
+    min-height: 100%;
+    background-color: #095484;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 800;
+}
+body, div, form, input, label 
+{ 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+legend 
+{ 
+    color: #fff;
+    background-color: #095484;
+    padding: 3px 5px;
+    font-size: 20px;
+    border-radius: 3px;
+    font-weight: 800;
+}
+h1 
+{
+    position: absolute;
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+    z-index: 2;
+}
+.testbox 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 30px;
+}
+
+form 
+{
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    height:max-content;
+}
+.banner 
+{
+    position: relative;
+    height: 350px;
+    width:100%;
+    background-image: url("images/background.jpg");  
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner::after 
+{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6); 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+input 
+{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 25%;
+    padding: 5px;
+    float:right;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+select 
+{
+    width: 25%;
+    padding: 7px 0;
+    background: transparent;
+    float:right;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    border-radius: 3px;
+    color: #666;
+    border-color: #ccc;
+}
+
+button 
+{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background: #095484;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'IBM Plex Sans', sans-serif;
+    float: left;
+    margin-left: 520px;
+}
+button:hover 
+{
+    background: #c1d4f3;
+    color:black;
+}
+#inst
+{
+    font-size: large;
+}
+select:hover
+{
+    border-color: #095484;
+    border-width: 1px;
+    background: #c1d4f3;
+}
+input:hover
+{
+    border-color: #095484;
+    border-width: 1px;
+    background: #c1d4f3;
+}
+

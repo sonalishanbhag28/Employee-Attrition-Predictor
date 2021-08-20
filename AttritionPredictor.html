@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Employee Attrition Predictor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div class="testbox">
+        <form action="/">
+          <div class="banner">
+            <h1>Employee Attrition Predictor</h1>
+          </div>
+          <hr>
+          <center><p id="inst">Please fill out the requested information below to check your attrition prediction. Thank you!</p></center>
+          <div class="insidebox">
+          <hr>
+          <legend>Employee Information</legend>
+          <br>
+          Enter Satisfaction Level with our company:
+          <input class="form-input" type="text" name="SatisfactionLevel" placeholder="Value between 0-1" ><br><br>
+          Enter Last Evaluation Score:
+          <input class="form-input" type="text" name="LastEval" placeholder="Value between 0-1"><br><br>
+          How many projects have you completed?
+          <input class="form-input" type="text" name="NoOfProjects" placeholder="Number of Projects"><br><br>
+          Enter Average Monthly Hours:
+          <input class="form-input" type="text" name="AverageMonthlyHours" placeholder="Number of Hours"><br><br>
+          How much time have you spent with our company?
+          <input class="form-input" type="text" name="TimeSpentwithCompany" placeholder="Years with our Company"><br><br>
+          Have you had any accidents at work?
+          <select id="WorkAccidents" name="WorkAccidents">
+            <option value="">Work Accidents</option>
+            <option value="0">Yes</option>
+            <option value="1">No</option>
+          </select><br><br>
+          Have you been promoted in the last five years?
+          <select id="Promotion" name="Promotion">
+            <option value="">Promotion</option>
+            <option value="0">Yes</option>
+            <option value="1">No</option>
+          </select><br><br>
+          Select Department:
+          <select id="Department" name="Department">
+            <option value="">Department</option>
+            <option value="7">Sales</option>
+            <option value="0">Accounting</option>
+            <option value="1">HR</option>
+            <option value="9">Technical</option>
+            <option value="8">Support</option>
+            <option value="3">Management</option>
+            <option value="2">IT</option>
+            <option value="5">Product Management</option>
+            <option value="4">Marketing</option>
+            <option value="6">Research and Development</option>
+          </select><br><br>
+          Select Salary Bracket:
+          <select id="Salary" name="Salary">
+            <option value="">Salary</option>
+            <option value="1">Low</option>
+            <option value="2">Medium</option>
+            <option value="0">High</option>
+          </select><br><br>
+          <div class="btn-block">
+            <button type="submit">Predict</button>
+          </div>
+      </form>
+    </div>
+  </body>
+</html>
